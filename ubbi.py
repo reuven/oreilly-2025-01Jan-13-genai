@@ -4,6 +4,9 @@ def ubbi_word(word):
     if not isinstance(word, str):
         raise AttributeError("Input must be a string")
     
+    if len(word) == 0:
+        raise ValueError('Empty string')
+    
     # Check for uppercase letters
     if any(c.isupper() for c in word):
         raise ValueError("Input must be lowercase")
