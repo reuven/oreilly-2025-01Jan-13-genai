@@ -1,4 +1,5 @@
 from ubbi import ubbi_word
+import pytest
 
 def test_simple_word():
     assert ubbi_word("dog") == "dubog"
