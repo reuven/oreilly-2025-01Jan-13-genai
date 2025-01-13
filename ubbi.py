@@ -12,6 +12,9 @@ def ubbi_word(word):
     if not word.isascii():
         raise ValueError("Input must contain only ASCII characters")
     
+    if not one_character.isalpha():
+        raise ValueError(f'{one_character} is illegal; stopping now')
+
     output = []
     for one_character in word:
         if one_character in 'aeiou':
