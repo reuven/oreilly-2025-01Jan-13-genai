@@ -27,12 +27,6 @@ def test_single_letter_vowel():
 def test_single_letter_consonant():
     assert ubbi_word("z") == "z"
 
-
-from ubbi import ubbi_word
-import pytest
-
-# Original tests remain...
-
 def test_rejects_non_string():
     with pytest.raises(AttributeError):
         ubbi_word(42)
