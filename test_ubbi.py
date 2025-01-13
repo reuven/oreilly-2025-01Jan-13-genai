@@ -13,13 +13,13 @@ def test_vowel_at_start():
     assert ubbi_word("eat") == "ubeubat"
 
 def test_consecutive_vowels():
-    assert ubbi_word("moon") == "mubouboon"
+    assert ubbi_word("moon") == "muboubon"
 
 def test_empty_string():
     assert ubbi_word("") == ""
 
 def test_all_vowels():
-    assert ubbi_word("aeiou") == "ubaubeubiuboubou"
+    assert ubbi_word("aeiou") == "ubaubeubiuboubu"
 
 def test_single_letter_vowel():
     assert ubbi_word("a") == "uba"
