@@ -10,7 +10,7 @@ def test_no_vowels():
     assert ubbi_word("cry") == "cry"
 
 def test_vowel_at_start():
-    assert ubbi_word("eat") == "ubeubeat"
+    assert ubbi_word("eat") == "ubeubat"
 
 def test_consecutive_vowels():
     assert ubbi_word("moon") == "mubouboon"
